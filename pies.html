@@ -29,14 +29,19 @@
 	    <div class='page-header'>
 	      <h1 >
 	        Recoding CRS data 
-	        <small> Which purpose codes went where? </small>
+	        <small> How does AidData coding change the landscape? </small>
 
 	      </h1>
 	    </div>
 	    <p id='tooltip'>
 	    </p>
+	    <div class='row-fluid'>
+	    	<p class='span6'>
+	    		<a class='btn' onclick='App.code_chart_this_data(App.aid_by_crs)'>Slice by CRS codes</a> 
+	    		<a class='btn' onclick='App.code_chart_this_data(App.aid_by_adt)'>Slice by ADT codes</a> 	    		
+	    </div>
 		<div class='row-fluid'>
-			<div id='heatmap' class='span12'>
+			<div id='pies' class='span12'>
 			</div>
 		</div>
 	</div>
@@ -45,4 +50,4 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js'></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/coffee-script/1.4.0/coffee-script.min.js"></script>
-<script type='text/coffeescript' src='heatmap.coffee'></script>
+<script type='text/coffeescript' src='pies.coffee'></script>
